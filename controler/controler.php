@@ -6,7 +6,6 @@ function login()
 {
     require_once 'view/login.php';
 }
-
 function home()
 {
     $news = getNews();
@@ -21,12 +20,21 @@ function tryLogin()
 {
     if (isset($_POST['login'])){
         $_SESSION['username']=$_POST['login'];
-        require_once 'index.php';
+        home();
     }
     else
     {
         require_once 'view/login.php';
     }
 
+}
+function Logout()
+{
+    session_unset();
+    home();
+}
+function Account()
+{
+    require_once 'view\account.php';
 }
 ?>

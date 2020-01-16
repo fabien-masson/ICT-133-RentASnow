@@ -34,6 +34,16 @@ switch($action)
 
     case 'tryLogin':
         tryLogin();
+        break;
+
+    case 'logout':
+        Logout();
+        break;
+
+    case 'account':
+        Account();
+        break;
+
     default:
         home();
         break;

@@ -50,14 +50,13 @@
                     <ul class="nav nav-pills">
                         <!-- On commence par afficher les boutons qui s'afficheront, peu importe les événements-->
                         <?php
-                        echo $_SESSION['username'];
                         if (isset($_SESSION['username'])){
-                            echo '<li><a href="index.php?action=login">Login</a></li>';
-
+                            echo '<li><a href="index.php?action=logout">Logout</a></li>';
+                            echo '<li><a href="index.php?action=account">Account</a></li>';
                         }
                         else
                         {
-                            echo '<li><a href="index.php?action=login">Logout</a></li>';
+                            echo '<li><a href="index.php?action=login">Login</a></li>';
                         }
                         ?>
 
