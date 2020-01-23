@@ -1,4 +1,10 @@
-﻿<!DOCTYPE HTML>
+﻿<!--
+Fabien Masson
+SI-C2a
+23.01.19
+Rent a snow
+-->
+<!DOCTYPE HTML>
 <html>
 <head>
     <meta charset="utf-8">
@@ -30,9 +36,7 @@
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-
-</head>
-<body id="pageBody">
+</head><body id="pageBody">
 
 <div id="divBoxed" class="container">
 

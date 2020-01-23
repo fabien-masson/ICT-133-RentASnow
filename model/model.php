@@ -1,4 +1,9 @@
-<?php
+<!--
+Fabien Masson
+SI-C2a
+23.01.19
+Rent a snow
+--><?php
 
 function getNews()
 {
@@ -7,5 +12,9 @@ function getNews()
 function getSnows()
 {
     return json_decode(file_get_contents("model/dataStorage/snows.json"),true);
+}
+function getUsers()
+{
+    return json_decode(file_get_contents("model/dataStorage/users.json"),true);
 }
 ?>

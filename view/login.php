@@ -1,4 +1,9 @@
-<?php
+<!--
+Fabien Masson
+SI-C2a
+23.01.19
+Rent a snow
+--><?php
 ob_start();
 $title = "RentASnow - Login";
 
@@ -9,7 +14,7 @@ $title = "RentASnow - Login";
 
         <form action="/index.php?action=tryLogin" method="post">
             <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-            <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+            <input type="text" id="password" class="fadeIn third" name="loginPass" placeholder="password">
             <input type="submit" class="fadeIn fourth" value="Log In">
         </form>
     </div>
