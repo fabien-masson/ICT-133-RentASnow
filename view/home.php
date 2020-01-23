@@ -46,4 +46,5 @@ $title = "RentASnow - Accueil";
 <?php
 $content = ob_get_clean();
 require_once "gabarit.php";
+var_dump($_SESSION['username']);
 ?>
