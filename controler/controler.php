@@ -11,6 +11,10 @@ function login()
 {
     require_once 'view/login.php';
 }
+function register()
+{
+    require_once 'view/register.php';
+}
 function home()
 {
     $news = getNews();
@@ -43,6 +47,24 @@ function tryLogin()
     home();
 
 }
+function tryRegister()
+{
+if ($_POST['register']=="" &&$_POST['registerPass']==""){
+    register();
+}
+else{
+
+    $usernameR=$_POST['register'];
+    $passR=$_POST['registerPass'];
+    $listeUsers=getUsers();
+    foreach ($listeUsers as $user)
+    {
+        $id=$user['id'];
+    }
+    home();
+}
+}
+
 function Logout()
 {
     session_unset();

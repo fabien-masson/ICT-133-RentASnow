@@ -6,15 +6,6 @@ Rent a snow
 --><?php
 session_start();
 
-//$username="test";
-//$_SESSION["username"]=$username;
-
-
-//die($_SESSION["username"]);
-
-
-
-
 require_once "controler/controler.php";
 if(isset($_GET['action']))
 {
@@ -29,6 +20,10 @@ switch($action)
         login();
         break;
 
+        case 'register':
+        register();
+        break;
+
     case 'home':
         home();
         break;
@@ -39,6 +34,10 @@ switch($action)
 
     case 'tryLogin':
         tryLogin();
+        break;
+
+    case 'tryRegister':
+        tryRegister();
         break;
 
     case 'logout':

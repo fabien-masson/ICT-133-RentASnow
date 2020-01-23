@@ -62,6 +62,7 @@ Rent a snow
                         else
                         {
                             echo '<li><a href="index.php?action=login">Login</a></li>';
+                            echo '<li><a href="index.php?action=register">Register</a></li>';
                         }
                         ?>
 
