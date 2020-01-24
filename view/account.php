@@ -13,7 +13,7 @@ $title = "RentASnow - account";
     <div>
         <?= $_SESSION['username'] ?>
     </div>
-
+<li><a href="index.php?action=passwordchange">Changer de mot de passe</a></li>
 <?php
 
 $content = ob_get_clean();

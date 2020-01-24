@@ -65,11 +65,15 @@ function tryRegister()
         }
         $lastId = $lastId + 1;
         $listeUsers[] = ["id" => $lastId, "user" => $usernameR, "pass" => $passR];
-        writeUsers($listeUsers);
+        $_SESSION['username']=$usernameR;
+        home();
     }
 
 }
+function passwordchange()
+{
 
+}
 function Logout()
 {
     session_unset();

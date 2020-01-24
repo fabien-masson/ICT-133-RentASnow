@@ -48,6 +48,10 @@ switch($action)
         Account();
         break;
 
+    case 'passwordchange':
+        passwordchange();
+        break;
+
     default:
         home();
         break;
